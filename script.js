@@ -79,25 +79,29 @@ function handleNoClick() {
 
 
 
-let yesClickCount = 0; // Counter untuk klik tombol "Yes"
+// let yesClickCount = 0; // Counter untuk klik tombol "Yes"
+
+// function handleYesClick() {
+//     yesClickCount++;
+
+//     if (yesClickCount === 1) {
+//         // Cek apakah pesan sudah ada, jika belum tambahkan
+//         let messageContainer = document.getElementById("yes-message");
+
+//         if (!messageContainer) {
+//             messageContainer = document.createElement("p");
+//             messageContainer.id = "yes-message";
+//             messageContainer.textContent = "Coba klik lagi deh";
+//             document.querySelector(".container").appendChild(messageContainer);
+//         } else {
+//             messageContainer.textContent = "Coba klik lagi deh"; // Pastikan teksnya tetap sama
+//         }
+//     } else if (yesClickCount === 2) {
+//         // Pindah ke halaman yes_page.html
+//         window.location.href = "yes_page.html";
+//     }
+// }
 
 function handleYesClick() {
-    yesClickCount++;
-
-    if (yesClickCount === 1) {
-        // Cek apakah pesan sudah ada, jika belum tambahkan
-        let messageContainer = document.getElementById("yes-message");
-
-        if (!messageContainer) {
-            messageContainer = document.createElement("p");
-            messageContainer.id = "yes-message";
-            messageContainer.textContent = "Coba klik lagi deh";
-            document.querySelector(".container").appendChild(messageContainer);
-        } else {
-            messageContainer.textContent = "Coba klik lagi deh"; // Pastikan teksnya tetap sama
-        }
-    } else if (yesClickCount === 2) {
-        // Pindah ke halaman yes_page.html
-        window.location.href = "yes_page.html";
-    }
+    window.location.href = "yes_page.html";
 }
