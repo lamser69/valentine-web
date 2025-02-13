@@ -54,7 +54,7 @@
 })();
 */
 const messages = [
-    "Kamu yakin?",
+    "Kamu yakin Jelek?",
     "YAKIns nich??",
     "Bener-bener Y-KIn??",
     "Srius please...",
